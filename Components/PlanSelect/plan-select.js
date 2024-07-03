@@ -1,18 +1,18 @@
 import StepHeader from "../StepHeader/step-header";
-import InputSection from "../InputSection/input-section";
+import SelectPlanSection from "../SelectPlanSection/select-plan-section";
 import StepFooter from "../StepFooter/step-footer";
 
-export default function PersonalInfo(){
+export default function PlanSelect(){
     return(
         <div className="h-96 w-3/4 m-4 flex justify-center">
             <div className="flex flex-col min-h-96 w-4/6 justify-between items-stretch">
                 <StepHeader
-                headerName={"Personal Info"}
-                headerDescription={"Please provide your name, email address, and phone number."}
+                headerName={"Select your plan"}
+                headerDescription={"You have the option of monthly or yearly billing."}
                 />
-                <InputSection />
+                <SelectPlanSection />
                 <StepFooter nextStep={"Second"} previousStep={null}/>
             </div>
-        </div>
+    </div>
     );
 }
