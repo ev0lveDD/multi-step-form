@@ -13,6 +13,6 @@ export default function PlanSelect({selectedPlan, setSelectedPlan, planBiling, s
                 <SelectPlanSection selectedPlan={selectedPlan} setSelectedPlan={setSelectedPlan} planBiling={planBiling} setPlanBiling={setPlanBiling}/>
                 <StepFooter nextStep={"Third"} previousStep={"First"} currentStep={currentStep} setCurrentStep={setCurrentStep}/>
             </div>
-    </div>
+        </div>
     );
 }

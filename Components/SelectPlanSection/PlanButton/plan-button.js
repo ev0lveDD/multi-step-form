@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function PlanButton({icon, planName, planPrice, selectedPlan, setSelectedPlan, planBiling}) {
 
     const active = "w-24 h-32 rounded-md bg-slate-100 flex items-center justify-center border border-violet-800 cursor-pointer";
-    const notActive= "w-24 h-32 rounded-md bg-transparent flex items-center justify-center border border-gray-300 cursor-pointer hover:border-violet-800 hover:bg-slate-100";
+    const notActive= "w-24 h-32 rounded-md bg-transparent flex items-center justify-center border border-gray-300 cursor-pointer hover:border-violet-800";
     
     return(
         <div className={selectedPlan === planName ? active : notActive} onClick={() => setSelectedPlan(planName)}>

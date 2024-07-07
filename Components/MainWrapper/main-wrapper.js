@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Menu from "@/Components/Menu/menu";
 import PersonalInfo from "@/Components/PersonalInfo/personal-info";
 import PlanSelect from "../PlanSelect/plan-select";
+import Addons from "../Addons/add-ons";
 
 export default function MainWrapper(){
     
@@ -31,6 +32,10 @@ export default function MainWrapper(){
             setPlanBiling={setPlanBiling}
             currentStep={currentStep}
             setCurrentStep={setCurrentStep}/> :
+
+            currentStep === "Third" ? <Addons
+            currentStep={currentStep}
+            setCurrentStep={setCurrentStep} /> :
 
             null}
 
