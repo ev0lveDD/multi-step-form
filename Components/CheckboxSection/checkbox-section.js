@@ -1,14 +1,11 @@
+import CheckboxButton from "./CheckboxButton/checkbox-button";
+
 export default function CheckboxSection() {
     return(
-        <ul>
-            <li>
-                <input type="checkbox" id="inline-checkbox" value="" class="hidden peer" required=""></input>
-                <label for="inline-checkbox" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">                           
-                    <div class="block">
-                        
-                    </div>
-                </label>
-            </li>
+        <ul className="flex flex-col justify-between gap-6">
+            <CheckboxButton id="online-service" addonName="Online service" addonDescription="Access to multiplayer games" addonPrice={1}/>
+            <CheckboxButton id="larger-storage" addonName="Larger storage" addonDescription="Extra 1TB of cloud save" addonPrice={2}/>
+            <CheckboxButton id="customizable-profile" addonName="Customizable profile" addonDescription="Custom theme on your profile" addonPrice={2}/>
         </ul>
     );
 }
