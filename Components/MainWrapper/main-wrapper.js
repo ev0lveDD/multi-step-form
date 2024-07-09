@@ -14,6 +14,10 @@ export default function MainWrapper(){
     const [selectedPlan, setSelectedPlan] = useState(null);
     const [yearlyPlanBiling, setYearlyPlanBiling] = useState(false);
 
+    const [firstAddonSelected, setFirstAddonSelected] = useState(false);
+    const [secondAddonSelected, setSecondAddonSelected] = useState(false);
+    const [thirdAddonSelected, setThirdAddonSelected] = useState(false);
+
     useEffect(() => {
         console.log(selectedPlan);
     },[selectedPlan])
