@@ -6,12 +6,13 @@ import Menu from "@/Components/Menu/menu";
 import PersonalInfo from "@/Components/PersonalInfo/personal-info";
 import PlanSelect from "../PlanSelect/plan-select";
 import Addons from "../Addons/add-ons";
+import Checkout from "../Checkout/checkout";
 
 export default function MainWrapper(){
     
     const [currentStep, setCurrentStep] = useState("First")
     const [selectedPlan, setSelectedPlan] = useState(null);
-    const [planBiling, setPlanBiling] = useState(false);
+    const [yearlyPlanBiling, setYearlyPlanBiling] = useState(false);
 
     useEffect(() => {
         console.log(selectedPlan);
@@ -28,12 +29,18 @@ export default function MainWrapper(){
             currentStep === "Second" ? <PlanSelect 
             selectedPlan={selectedPlan} 
             setSelectedPlan={setSelectedPlan} 
-            planBiling={planBiling} 
-            setPlanBiling={setPlanBiling}
+            yearlyPlanBiling={yearlyPlanBiling} 
+            setYearlyPlanBiling={setYearlyPlanBiling}
             currentStep={currentStep}
             setCurrentStep={setCurrentStep}/> :
 
             currentStep === "Third" ? <Addons
+            yearlyPlanBiling={yearlyPlanBiling}
+            currentStep={currentStep}
+            setCurrentStep={setCurrentStep} /> :
+
+            currentStep === "Fourth" ? <Checkout
+            yearlyPlanBiling={yearlyPlanBiling}
             currentStep={currentStep}
             setCurrentStep={setCurrentStep} /> :
 
