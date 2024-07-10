@@ -2,7 +2,7 @@ import StepHeader from "../StepHeader/step-header";
 import StepFooter from "../StepFooter/step-footer";
 import CheckboxSection from "../CheckboxSection/checkbox-section";
 
-export default function Addons({currentStep, setCurrentStep, yearlyPlanBiling}) {
+export default function Addons({currentStep, setCurrentStep, yearlyPlanBiling, firstAddonSelected, setFirstAddonSelected, secondAddonSelected, setSecondAddonSelected, thirdAddonSelected, setThirdAddonSelected}) {
     return(
         <div className="h-96 w-3/4 m-4 flex justify-center">
             <div className="flex flex-col min-h-96 w-4/6 justify-between items-stretch">
@@ -10,7 +10,14 @@ export default function Addons({currentStep, setCurrentStep, yearlyPlanBiling}) 
                 headerName={"Pick add-ons"}
                 headerDescription={"Add-ons help enhance your gaming experience."}
                 />
-                <CheckboxSection yearlyPlanBiling={yearlyPlanBiling}/>
+                <CheckboxSection 
+                firstAddonSelected={firstAddonSelected}
+                setFirstAddonSelected={setFirstAddonSelected}
+                secondAddonSelected={secondAddonSelected}
+                setSecondAddonSelected={setSecondAddonSelected}
+                thirdAddonSelected={thirdAddonSelected}
+                setThirdAddonSelected={setThirdAddonSelected}
+                yearlyPlanBiling={yearlyPlanBiling}/>
                 <StepFooter nextStep={"Fourth"} previousStep={"Second"} currentStep={currentStep} setCurrentStep={setCurrentStep}/>
             </div>
         </div>

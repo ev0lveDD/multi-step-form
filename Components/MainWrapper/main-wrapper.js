@@ -40,11 +40,21 @@ export default function MainWrapper(){
 
             currentStep === "Third" ? <Addons
             yearlyPlanBiling={yearlyPlanBiling}
+            firstAddonSelected={firstAddonSelected}
+            setFirstAddonSelected={setFirstAddonSelected}
+            secondAddonSelected={secondAddonSelected}
+            setSecondAddonSelected={setSecondAddonSelected}
+            thirdAddonSelected={thirdAddonSelected}
+            setThirdAddonSelected={setThirdAddonSelected}
             currentStep={currentStep}
             setCurrentStep={setCurrentStep} /> :
 
             currentStep === "Fourth" ? <Checkout
+            selectedPlan={selectedPlan}
             yearlyPlanBiling={yearlyPlanBiling}
+            firstAddonSelected={firstAddonSelected}
+            secondAddonSelected={secondAddonSelected}
+            thirdAddonSelected={thirdAddonSelected}
             currentStep={currentStep}
             setCurrentStep={setCurrentStep} /> :
 
