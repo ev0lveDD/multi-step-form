@@ -6,7 +6,7 @@ export default function Menu({currentStep}){
             <MenuRow number={1} description={"YOUR INFO"} active={currentStep === "First" ? true : false}/>
             <MenuRow number={2} description={"SELECT PLAN"} active={currentStep === "Second" ? true : false}/>
             <MenuRow number={3} description={"ADD-ONS"} active={currentStep === "Third" ? true : false}/>
-            <MenuRow number={4} description={"SUMMARY"} active={currentStep === "Fourth" ? true : false}/>
+            <MenuRow number={4} description={"SUMMARY"} active={currentStep === "Fourth" || currentStep === "Submit" ? true : false}/>
         </div>
     );
 }

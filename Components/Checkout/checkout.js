@@ -11,7 +11,7 @@ export default function Checkout({currentStep, setCurrentStep, yearlyPlanBiling,
                 headerDescription={"Double-check everything looks OK before confirming."}
                 />
                 <SummarySection firstAddonSelected={firstAddonSelected} secondAddonSelected={secondAddonSelected} thirdAddonSelected={thirdAddonSelected} selectedPlan={selectedPlan} yearlyPlanBiling={yearlyPlanBiling} selectedPlanValue={selectedPlanValue} totalValue={totalValue} setCurrentStep={setCurrentStep}/>
-                <StepFooter nextStep={"Confirm"} previousStep={"Third"} currentStep={currentStep} setCurrentStep={setCurrentStep}/>
+                <StepFooter nextStep={"Submit"} previousStep={"Third"} currentStep={currentStep} setCurrentStep={setCurrentStep}/>
             </div>
         </div>
     );

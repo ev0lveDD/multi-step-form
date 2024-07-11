@@ -7,6 +7,7 @@ import PersonalInfo from "@/Components/PersonalInfo/personal-info";
 import PlanSelect from "../PlanSelect/plan-select";
 import Addons from "../Addons/add-ons";
 import Checkout from "../Checkout/checkout";
+import SubmitConfirmation from "../SubmitConfirmation/submit-confirmation";
 
 export default function MainWrapper(){
     
@@ -131,7 +132,7 @@ export default function MainWrapper(){
             totalValue={totalValue}
             setCurrentStep={setCurrentStep} /> :
 
-            null}
+            currentStep === "Submit" ? <SubmitConfirmation /> : null}
 
         </div>
     );

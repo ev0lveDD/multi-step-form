@@ -7,7 +7,7 @@ export default function SummarySection({firstAddonSelected, secondAddonSelected,
                 <div className="p-4 flex w-full justify-between items-center">
                     <div className="flex flex-col">
                         <p className="text-sky-950 text-xs font-bold">{selectedPlan} ({yearlyPlanBiling ? "Yearly" : "Monthly"})</p>
-                        <button className="bg-transparent text-slate-400 hover:text-slate-600 text-[10px] font-normal underline w-min mt-1" onClick={() => setCurrentStep("Second")}>
+                        <button className="bg-transparent text-slate-400 hover:text-violet-400 text-[10px] font-semibold underline w-min mt-1" onClick={() => setCurrentStep("Second")}>
                             Change
                         </button>
                     </div>
