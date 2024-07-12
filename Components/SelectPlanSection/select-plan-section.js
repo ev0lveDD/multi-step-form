@@ -8,7 +8,7 @@ import proIcon from "@/public/icon-pro.svg";
 import PlanButton from "./PlanButton/plan-button";
 
 
-export default function SelectPlanSection({selectedPlan, setSelectedPlan, yearlyPlanBiling, setYearlyPlanBiling}){
+export default function SelectPlanSection({selectedPlan, setSelectedPlan, yearlyPlanBiling, setYearlyPlanBiling, isPlanSelected}) {
 
     function onChangeCheckBox(){
         setYearlyPlanBiling(!yearlyPlanBiling);
@@ -24,6 +24,9 @@ export default function SelectPlanSection({selectedPlan, setSelectedPlan, yearly
             <PlanButton icon={advancedIcon} planName={"Advanced"} planPrice={yearlyPlanBiling ? 120 : 12} planActive={false} selectedPlan={selectedPlan} setSelectedPlan={setSelectedPlan} yearlyPlanBiling={yearlyPlanBiling}/>
             <PlanButton icon={proIcon} planName={"Pro"} planPrice={yearlyPlanBiling ? 150 : 15} planActive={false} selectedPlan={selectedPlan} setSelectedPlan={setSelectedPlan} yearlyPlanBiling={yearlyPlanBiling}/>
         </div>
+        {!isPlanSelected ? 
+        <p className="tracking-wide text-red-500 text-xs font-semibold w-full text-center">Please select your plan</p>
+        : null}
         <div className="flex w-full h-10 justify-center items-center rounded-md bg-slate-100">
             <label className="flex items-center cursor-pointer">
                 <span className={yearlyPlanBiling ? planBilingTextNotActive : planBilingTextActive}>Monthly</span>

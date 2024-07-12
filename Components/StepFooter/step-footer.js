@@ -1,4 +1,4 @@
-export default function StepFooter({nextStep, previousStep, currentStep, setCurrentStep}){
+export default function StepFooter({nextStep, previousStep, currentStep, setCurrentStep, checkFunction}){
     return(
         <div className="w-full flex items-center justify-between pt-6 pb-3">
             {previousStep ? 
@@ -10,7 +10,7 @@ export default function StepFooter({nextStep, previousStep, currentStep, setCurr
             <button className="bg-blue-800 hover:bg-violet-400 text-gray-100 font-bold py-2 px-6 rounded-md text-[10px]" onClick={() => setCurrentStep(nextStep)}>
                 Confirm
             </button> : 
-            <button className="bg-blue-950 hover:bg-blue-900 text-gray-100 font-bold py-2 px-6 rounded-md text-[10px]" onClick={() => setCurrentStep(nextStep)}>
+            <button className="bg-blue-950 hover:bg-blue-900 text-gray-100 font-bold py-2 px-6 rounded-md text-[10px]" onClick={() => checkFunction(nextStep)}>
                 Next Step
             </button>}
         </div>

@@ -10,9 +10,13 @@ import Checkout from "../Checkout/checkout";
 import SubmitConfirmation from "../SubmitConfirmation/submit-confirmation";
 
 export default function MainWrapper(){
+
+    const [piName, setPIName] = useState("");
+    const [piEmail, setPIEmail] = useState("");
+    const [piNumber, setPINumber] = useState("");
     
     const [currentStep, setCurrentStep] = useState("First")
-    const [selectedPlan, setSelectedPlan] = useState(null);
+    const [selectedPlan, setSelectedPlan] = useState("");
     const [yearlyPlanBiling, setYearlyPlanBiling] = useState(false);
     const [selectedPlanValue, setSelectedPlanValue] = useState(null);
 
@@ -98,9 +102,16 @@ export default function MainWrapper(){
         <div className="bg-white rounded-lg h-5/6 w-7/12 flex items-center justify-start">
             <Menu currentStep={currentStep} />
             {/* <PersonalInfo /> */}
-            {currentStep === "First" ? <PersonalInfo 
+            {currentStep === "First" ? <PersonalInfo
+            piName={piName}
+            setPIName={setPIName}
+            piEmail={piEmail}
+            setPIEmail={setPIEmail}
+            piNumber={piNumber}
+            setPINumber={setPINumber}
             currentStep={currentStep}
-            setCurrentStep={setCurrentStep}/> :
+            setCurrentStep={setCurrentStep}
+            /> :
 
             currentStep === "Second" ? <PlanSelect 
             selectedPlan={selectedPlan} 
@@ -108,7 +119,8 @@ export default function MainWrapper(){
             yearlyPlanBiling={yearlyPlanBiling} 
             setYearlyPlanBiling={setYearlyPlanBiling}
             currentStep={currentStep}
-            setCurrentStep={setCurrentStep}/> :
+            setCurrentStep={setCurrentStep}
+            /> :
 
             currentStep === "Third" ? <Addons
             yearlyPlanBiling={yearlyPlanBiling}
@@ -119,7 +131,8 @@ export default function MainWrapper(){
             thirdAddonSelected={thirdAddonSelected}
             setThirdAddonSelected={setThirdAddonSelected}
             currentStep={currentStep}
-            setCurrentStep={setCurrentStep} /> :
+            setCurrentStep={setCurrentStep}
+            /> :
 
             currentStep === "Fourth" ? <Checkout
             selectedPlan={selectedPlan}
@@ -130,7 +143,8 @@ export default function MainWrapper(){
             thirdAddonSelected={thirdAddonSelected}
             currentStep={currentStep}
             totalValue={totalValue}
-            setCurrentStep={setCurrentStep} /> :
+            setCurrentStep={setCurrentStep}
+            /> :
 
             currentStep === "Submit" ? <SubmitConfirmation /> : null}
 
