@@ -99,7 +99,7 @@ export default function MainWrapper(){
     }, [selectedPlanValue, firstAddonValue, secondAddonValue, thirdAddonValue, yearlyPlanBiling,])
 
     return(
-        <div className="bg-slate-200 md:bg-white rounded-lg h-full md:h-5/6 w-full md:w-7/12 flex flex-col md:flex-row items-center justify-start">
+        <div className="bg-slate-200 md:bg-white rounded-lg h-full md:h-4/6 w-full md:w-7/12 flex flex-col md:flex-row items-center justify-start">
             <Menu currentStep={currentStep} />
             {/* <PersonalInfo /> */}
             {currentStep === "First" ? <PersonalInfo
