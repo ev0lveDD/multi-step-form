@@ -4,7 +4,7 @@ export default function StepHeader({headerName, headerDescription}){
             <h1 className="text-2xl text-blue-950 font-bold my-2">
                 {headerName}
             </h1>
-            <p className="text-xs text-slate-400 font-medium">
+            <p className="text-sm md:text-xs text-slate-400 font-medium">
                 {headerDescription}
             </p>
         </div>

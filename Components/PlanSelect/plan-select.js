@@ -17,8 +17,8 @@ export default function PlanSelect({selectedPlan, setSelectedPlan, yearlyPlanBil
     }
 
     return(
-        <div className="h-96 w-3/4 m-4 flex justify-center">
-            <div className="flex flex-col min-h-96 w-4/6 justify-between items-stretch">
+        <div className="h-96 w-5/6 md:w-3/4 m-4 bg-white rounded-xl flex justify-center">
+            <div className="flex flex-col min-h-96 w-5/6 md:w-4/6 justify-between items-stretch">
                 <StepHeader
                 headerName={"Select your plan"}
                 headerDescription={"You have the option of monthly or yearly billing."}

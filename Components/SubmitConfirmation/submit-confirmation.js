@@ -4,7 +4,7 @@ import confirmationIcon from "@/public/icon-thank-you.svg";
 
 export default function SubmitConfirmation(){
     return(
-        <div className="h-96 w-3/4 m-4 flex justify-center">
+        <div className="h-96 w-5/6 md:w-3/4 m-4 bg-white rounded-xl flex justify-center">
             <div className="flex flex-col min-h-96 w-4/6 justify-center items-center gap-2">
                 <Image alt="Confirmation Icon" src={confirmationIcon} height={60} width={60}/>
                 <h1 className="text-xl text-blue-950 font-black tracking-wide my-2">Thank you!</h1>
