@@ -6,7 +6,7 @@ export default function StepFooter({nextStep, previousStep, currentStep, setCurr
                     <button className="bg-transparent text-gray-400 hover:text-gray-600 font-medium text-[10px]" onClick={() => setCurrentStep(previousStep)}>
                         Go Back
                     </button>
-                : null}
+                : <div className="px-6 py-2"></div>}
                 {currentStep === "Fourth" ? 
                 <button className="bg-blue-800 hover:bg-violet-400 text-gray-100 font-bold py-2 px-6 rounded-md text-[10px]" onClick={() => setCurrentStep(nextStep)}>
                     Confirm
