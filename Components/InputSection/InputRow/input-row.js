@@ -10,7 +10,7 @@ export default function InputRow({inputLabel, inputPlaceholder, inputId, inputTy
                     {inputLabel}
                 </label>
                 {isInputEmpty ? 
-                    <p className="tracking-wide text-red-500 test-xs md:text-[10px] font-semibold">
+                    <p className="tracking-wide text-red-500 text-xs md:text-[10px] font-semibold">
                         This field is required
                     </p>
                 : null}
