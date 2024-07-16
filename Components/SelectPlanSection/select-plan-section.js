@@ -18,8 +18,8 @@ export default function SelectPlanSection({selectedPlan, setSelectedPlan, yearly
     const planBilingTextNotActive = "text-slate-400 text-xs font-bold mx-4";
 
     return(
-        <>
-        <div className="flex w-full justify-between">   
+        <div className="flex flex-col gap-8">
+        <div className="flex flex-col md:flex-row w-full justify-between gap-2">   
             <PlanButton icon={arcadeIcon} planName={"Arcade"} planPrice={yearlyPlanBiling ? 90 : 9} planActive={false} selectedPlan={selectedPlan} setSelectedPlan={setSelectedPlan} yearlyPlanBiling={yearlyPlanBiling}/>
             <PlanButton icon={advancedIcon} planName={"Advanced"} planPrice={yearlyPlanBiling ? 120 : 12} planActive={false} selectedPlan={selectedPlan} setSelectedPlan={setSelectedPlan} yearlyPlanBiling={yearlyPlanBiling}/>
             <PlanButton icon={proIcon} planName={"Pro"} planPrice={yearlyPlanBiling ? 150 : 15} planActive={false} selectedPlan={selectedPlan} setSelectedPlan={setSelectedPlan} yearlyPlanBiling={yearlyPlanBiling}/>
@@ -35,6 +35,6 @@ export default function SelectPlanSection({selectedPlan, setSelectedPlan, yearly
                 <span className={yearlyPlanBiling ? planBilingTextActive : planBilingTextNotActive}>Yearly</span>
             </label>
         </div>
-        </>
+        </div>
     );
 }

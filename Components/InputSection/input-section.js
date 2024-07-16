@@ -2,7 +2,7 @@ import InputRow from "./InputRow/input-row";
 
 export default function InputSection({piName, setPIName, piEmail, setPIEmail, piNumber, setPINumber, isPINameEmpty, isPIEmailEmpty, isPINumberEmpty}){
     return(
-        <>
+        <div className="flex flex-col gap-4">
             <InputRow 
                 inputLabel={"Name"} 
                 inputPlaceholder={"e.g. Stephen King"}
@@ -30,6 +30,6 @@ export default function InputSection({piName, setPIName, piEmail, setPIEmail, pi
                 inputFunction={setPINumber}
                 isInputEmpty={isPINumberEmpty}
             />
-        </>
+        </div>
     );
 }
