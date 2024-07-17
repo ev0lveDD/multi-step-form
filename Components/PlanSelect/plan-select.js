@@ -17,7 +17,7 @@ export default function PlanSelect({selectedPlan, setSelectedPlan, yearlyPlanBil
     }
 
     return(
-        <div className="h-fit md:h-96 w-5/6 md:w-3/4 m-4 bg-white rounded-xl flex justify-center">
+        <div className="h-fit lg:h-96 w-5/6 lg:w-3/4 m-4 bg-white md:bg-transparent rounded-xl flex justify-center">
             <div className="flex flex-col min-h-96 w-5/6 md:w-4/6 justify-start md:justify-between items-stretch gap-4 md:gap-0 p-4 md:p-0">
                 <StepHeader
                 headerName={"Select your plan"}
