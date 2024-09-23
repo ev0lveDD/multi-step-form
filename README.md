@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# MULTI-STEP FORM
 
-## Getting Started
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Preview](#Preview)
 
-First, run the development server:
+## General info
+This project consisted of creating multi-step form.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Users should be able to:
+* Complete each step of the sequence
+* Go back to a previous step to update their selections
+* See a summary of their selections on the final step and confirm their order
+* View the optimal layout for the interface depending on their device's screen size
+* See hover and focus states for all interactive elements on the page
+* Receive form validation messages if:
+  ** A field has been missed
+  ** The email address is not formatted correctly
+  ** A step is submitted, but no selection has been made
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The project was written in NEXT.JS, as part of a consolidation of the acquired knowledge.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Link: https://multi-step-form-ev0.netlify.app/
+	
+## Technologies
+Project is created with:
+* NEXT.JS
+* React
+* HTML
+* CSS
+* JavaScript
+* Tailwind CSS
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Preview
 
-## Learn More
+Desktop view - Personal Info
+* ![ms1](https://github.com/user-attachments/assets/4eefea4e-d19f-4ab9-aa67-32bba8d2eced)
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Desktop view - Select Plan
+* ![ms2](https://github.com/user-attachments/assets/bdcabfec-6961-4f37-92ad-0a6946aef83e)
+ 
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Desktop view - Add-ons
+* ![ms3](https://github.com/user-attachments/assets/1a88ef75-fe88-474c-a1a7-3d3822ce6494)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+Desktop view - Summary
+* ![ms4](https://github.com/user-attachments/assets/d9a19fa2-4cff-44f3-9b74-c59a9b8cb3ff)
+
+
+
+Desktop view - Thank you
+* ![ms5](https://github.com/user-attachments/assets/cd71b8d2-c42d-44bc-8800-3c0b240599e3)
+
+
+
+Mobile view - Personal Info
+* ![multi1](https://github.com/user-attachments/assets/cfd97391-324d-49b4-8819-1ad3c6b25f33)
+
+
+
+Mobile view - Select Plan
+* ![multi2](https://github.com/user-attachments/assets/d83f5b2f-47e2-46df-9671-cea124b0dc90)
+
+
+
+Mobile view - Add-ons
+* ![multi3](https://github.com/user-attachments/assets/8b3435cb-67ed-4542-9838-a16ef7fb4a24)
+
+
+
+Mobile view - Summary
+* ![multi4](https://github.com/user-attachments/assets/d090c2a0-80f3-4607-b96d-28e46d6ddeaa)
+
+
+
+Mobile view - Thank you
+* ![multi5](https://github.com/user-attachments/assets/1fb0054a-1a1e-45c2-9f8b-6fe52c915b36)
